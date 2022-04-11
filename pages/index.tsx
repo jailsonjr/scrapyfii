@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css';
 
 import Logo from '../components/logo';
 import SearchInput from '../components/searchInput';
+import Link from '../components/link';
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
         <div className={styles.header}>
           <Logo />          
           <div className={styles.mainMenu}>
+            <Link />
             <SearchInput />
           </div>
         </div>
