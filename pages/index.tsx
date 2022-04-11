@@ -3,6 +3,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
 import Logo from '../components/logo';
+import SearchInput from '../components/searchInput';
 
 const Home: NextPage = () => {
   return (
@@ -15,9 +16,10 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <div className={styles.header}>
-          <Logo />
-          <div></div>
-          <div></div>
+          <Logo />          
+          <div className={styles.mainMenu}>
+            <SearchInput />
+          </div>
         </div>
         
       </main>

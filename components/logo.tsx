@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import BarrigaLogo from '../images/barriga.png';
 import BarrigaLogoSVG from '../images/barriga.svg';
 
 const Logo = () => {

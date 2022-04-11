@@ -7,6 +7,7 @@
 
 .header {
   display: flex;
+  justify-content: space-between;
 }
 
 .logo {
@@ -17,12 +18,12 @@
   border-bottom-right-radius: 4px;
 }
 
-
 .texts {
   margin-left: 1rem;
   font-family: FontKartoon;
   font-weight: 100;
   color: #fff;
+  text-transform: capitalize;
 }
 
 .logo span {
@@ -52,3 +53,36 @@
   letter-spacing: 0.15rem;
 }
 
+.mainMenu {
+}
+
+.searchInput {
+  display: flex;
+  background-color: #17231E;
+  min-width: 18.75rem;
+  position: relative;
+  padding-right: 1rem;
+  border-radius: 4px;
+  margin-top: 1.375rem;
+}
+
+.searchInput input{
+  background-color: #17231E;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 0.7rem 1rem;
+  outline: none;
+  color: #eee;
+  border-radius: 4px;
+}
+
+.searchInput input::placeholder {
+  color: #d8d8d8;
+}
+
+.searchInput .searchIcon {
+  color: #eee;
+  margin-top: 0.6rem;
+  transform: scale(1.5);
+}
