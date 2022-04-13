@@ -1,11 +1,16 @@
 import styles from '../styles/Home.module.css'
-import { BsCalendar2Week as CalendarIcon  } from "react-icons/bs"
+import { IconType } from "react-icons"
 
-const Link = () => {
+interface linkProps {
+  linkText: String,
+  linkIcon: IconType
+}
+
+const Link = (props: linkProps) => {
     return (
       <a href='#' className={styles.link}>
-        <CalendarIcon className={styles.calendarIcon}/>
-        <span>agenda dividendos</span>        
+        <props.linkIcon className={styles.calendarIcon}/>
+        <span>{ props.linkText }</span>        
       </a>
     )
 }

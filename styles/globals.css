@@ -3,6 +3,16 @@
   src: url('../public/Kartoon.otf');
 }
 
+@font-face {
+  font-family: FontInterRegular;
+  src: url('../public/Inter-Regular.ttf');
+}
+
+@font-face {
+  font-family: FontInterMedium;
+  src: url('../public/Inter-Medium.ttf');
+}
+
 html,
 body {
   padding: 0;

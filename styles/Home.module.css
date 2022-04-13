@@ -1,5 +1,6 @@
 .container {
   padding: 0 2rem;
+  font-family: FontKartoon;
 }
 
 .main {
@@ -125,3 +126,55 @@
 .link:hover {
   background-color: #17231E;
 }
+
+.content {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.content section:first-child, .content section:last-child {
+  flex: 0.5;
+}
+
+.content section:last-child {
+  padding-left: 1rem;
+}
+
+.content section:first-child{
+  padding-right: 1rem;
+}
+
+.content section:first-child h3, .content section:last-child h3{
+  color: #F1BD7C;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0.5rem 0 1.25rem;
+}
+
+.content section:nth-child(2){
+  flex: 1;
+}
+
+.content section:nth-child(2) h3{
+  font-family: FontInterMedium;
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5625rem;
+  text-transform: uppercase;
+  color: #eee;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+.content section:nth-child(2) h3 span{
+  color: #bababa;
+  margin-left: 1rem;
+}
+
+.indicatorsFii {
+  background-color: #17231E;
+  min-width: 100%;
+  min-height: 500px;
+  border-radius: 3px;
+}
+
