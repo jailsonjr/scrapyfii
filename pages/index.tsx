@@ -7,6 +7,7 @@ import { BiBuildingHouse as FiisIcon  } from "react-icons/bi"
 import Logo from '../components/logo';
 import SearchInput from '../components/searchInput';
 import Link from '../components/link';
+import Indicators from '../components/indicators';
 
 const Home: NextPage = () => {
   return (
@@ -28,19 +29,49 @@ const Home: NextPage = () => {
         </div>
 
         <section className={styles.content}>
-          <section>
+          <section className={styles.topFiis}>
             <h3>#top FIIs de hoje!</h3>
             <div className={styles.indicatorsFii}>
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
             </div>
           </section>
-          <section>
+          <section className={styles.contentFiis}>
             <h3>MXRF<span>MAXI RENDA FDO INV IMOB - FII</span></h3>   
             <div className={styles.indicatorsFii}>
             </div>
           </section>
-          <section>
+          <section className={styles.downFiis}>
             <h3>#down FIIs de hoje!</h3> 
             <div className={styles.indicatorsFii}>
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
+              <Indicators />
             </div>           
           </section>
         </section>

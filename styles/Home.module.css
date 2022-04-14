@@ -3,8 +3,6 @@
   font-family: FontKartoon;
 }
 
-.main {
-}
 
 .header {
   display: flex;
@@ -130,32 +128,35 @@
 .content {
   display: flex;
   margin-top: 1rem;
+  max-height: fit-content;
 }
 
-.content section:first-child, .content section:last-child {
+.content section.topFiis, .content section.downFiis {
   flex: 0.5;
 }
 
-.content section:last-child {
+.content section.downFiis {
   padding-left: 1rem;
 }
 
-.content section:first-child{
+.content section.topFiis{
   padding-right: 1rem;
 }
 
-.content section:first-child h3, .content section:last-child h3{
+.content section.topFiis h3, .content section.downFiis h3{
   color: #F1BD7C;
   font-size: 1.25rem;
   margin: 0;
   padding: 0.5rem 0 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
 }
 
-.content section:nth-child(2){
+.content section.contentFiis {
   flex: 1;
 }
 
-.content section:nth-child(2) h3{
+.content section.contentFiis h3{
   font-family: FontInterMedium;
   margin: 0;
   margin-bottom: 1rem;
@@ -166,15 +167,67 @@
   padding-left: 1rem;
 }
 
-.content section:nth-child(2) h3 span{
+.content section.contentFiis h3 span{
   color: #bababa;
   margin-left: 1rem;
 }
 
-.indicatorsFii {
+.content section.contentFiis .indicatorsFii{
   background-color: #17231E;
+}
+
+.indicatorsFii {
   min-width: 100%;
-  min-height: 500px;
   border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3125rem;
+}
+
+.fiiDayWrapper {
+  background-color: #00661A;
+  padding-left: 0.625rem;
+  border-radius: 0.1878rem;
+}
+
+.topFiis .fiiDayWrapper {
+  background-color: #00661A;
+}
+
+.downFiis .fiiDayWrapper {
+  background-color: #B20000;
+}
+
+.fiiDayContent {
+  background-color: #17231E;
+  padding: 0.5rem 0.625rem 0.6rem;
+  font-family: FontInterRegular;
+  border-radius: 0.1878rem;
+  color: #eee;
+  display: flex;
+}
+
+.fiiDayContent span:first-child {
+  flex: 0.5;
+}
+
+.fiiDayContent span {
+  vertical-align: middle;
+  font-size: 0.75rem;
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contentFiis {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.contentFiis .indicatorsFii{
+  height: 100%;
+  background-color: #17231E;
 }
 
