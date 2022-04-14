@@ -1,14 +1,22 @@
 import styles from '../styles/Home.module.css'
+interface indicatorsProps {
+    numberItem: Number,
+    ticker: String,
+    value: Number,
+    gain_today: String,
+    gain_7d: String
+  }
+  
 
-const Indicators = () => {
+const Indicators = (props: indicatorsProps) => {
     return (
       <section className={styles.fiiDayWrapper}>   
         <section className={styles.fiiDayContent}>   
-            <span>1</span>
-            <span>galg11</span>
-            <span>r$ 84,65</span>
-            <span>+5,5%</span>
-            <span>-1,5%</span>
+            <span>{ props.numberItem }</span>
+            <span>{ props.ticker }</span>
+            <span>r$ { props.value }</span>
+            <span>{ props.gain_today }</span>
+            <span>{ props.gain_7d }</span>
         </section>
       </section>
     )

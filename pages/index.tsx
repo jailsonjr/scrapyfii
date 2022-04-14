@@ -32,21 +32,21 @@ const Home: NextPage = () => {
           <section className={styles.topFiis}>
             <h3>#top FIIs de hoje!</h3>
             <div className={styles.indicatorsFii}>
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
+              <Indicators numberItem={1} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={2} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={3} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={4} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={5} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={6} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={7} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={8} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={9} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={10} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={11} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={12} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={13} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={14} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={15} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
             </div>
           </section>
           <section className={styles.contentFiis}>
@@ -57,21 +57,21 @@ const Home: NextPage = () => {
           <section className={styles.downFiis}>
             <h3>#down FIIs de hoje!</h3> 
             <div className={styles.indicatorsFii}>
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
-              <Indicators />
+              <Indicators numberItem={1} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={2} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={3} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={4} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={5} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={6} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={7} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={8} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={9} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={10} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={11} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={12} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={13} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={14} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
+              <Indicators numberItem={15} ticker="galg11" value={84.58} gain_today="+0,25%" gain_7d="+1,54%" />
             </div>           
           </section>
         </section>

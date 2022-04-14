@@ -231,3 +231,12 @@
   background-color: #17231E;
 }
 
+.fiiDayWrapper:hover  {
+  background-color: #F1BD7C;
+  cursor: pointer;
+}
+
+.fiiDayWrapper:hover .fiiDayContent {
+  background-color: #1F3029;
+}
+
