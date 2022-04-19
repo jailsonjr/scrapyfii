@@ -7,5 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Update Ticker price
-        run: |
-          curl --request POST https://srbarrigafiis.vercel.app/api/ticker/update
+        run: curl --request POST https://srbarrigafiis.vercel.app/api/ticker/update
