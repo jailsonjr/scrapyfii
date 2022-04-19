@@ -1,4 +1,4 @@
-name: update-price-ticker
+name: ticker-price-update
 on:
   schedule:
     - cron: '*/5 * * * *'
@@ -6,5 +6,5 @@ jobs:
   cron:
     runs-on: ubuntu-latest
     steps:
-      - name: Update Ticker price
+      - name: run-job
         run: curl --request POST https://srbarrigafiis.vercel.app/api/ticker/update
