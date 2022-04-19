@@ -1,10 +1,7 @@
 name: ticker-price-update
 on: 
-  push:
-    branchs:
-      - main
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '* 5 * * *'
 jobs:
   cron:
     runs-on: ubuntu-latest
