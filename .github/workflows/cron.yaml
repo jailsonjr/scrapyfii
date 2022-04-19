@@ -1,7 +1,7 @@
 name: update-price-ticker
 on:
   schedule:
-    - cron: '*/* * * * *'
+    - cron: '*/5 * * * *'
 jobs:
   cron:
     runs-on: ubuntu-latest
