@@ -1,17 +1,17 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
   provider = "prisma-client-js"
+  previewFeatures = ["referentialIntegrity"]  
 }
 
 datasource db {
-  provider = "mongodb"
+  provider = "mysql"
   url      = env("DATABASE_URL")
+  referentialIntegrity = "prisma"
 }
 
 model tickers_info {
-  id String @id @map("_id")
+  id String @id @default(uuid())
   ticker String @unique
   ticker_name String @unique
   ticker_admin String?
