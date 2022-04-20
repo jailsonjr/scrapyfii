@@ -13,6 +13,7 @@ datasource db {
 model tickers_info {
   id String @id @default(uuid())
   ticker String @unique
-  ticker_name String @unique
+  ticker_type String?
+  ticker_name String? @unique
   ticker_admin String?
 }
