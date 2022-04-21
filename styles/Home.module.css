@@ -1,6 +1,7 @@
 .container {
   padding: 0 2rem;
   font-family: FontKartoon;
+  margin-bottom: 1rem;
 }
 
 
@@ -140,7 +141,7 @@
 }
 
 .content section.topFiis{
-  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .content section.topFiis h3, .content section.downFiis h3{
@@ -153,7 +154,7 @@
 }
 
 .content section.contentFiis {
-  flex: 1;
+  flex: 1.7;
 }
 
 .content section.contentFiis h3{
@@ -164,7 +165,6 @@
   text-transform: uppercase;
   color: #eee;
   font-weight: bold;
-  padding-left: 1rem;
 }
 
 .content section.contentFiis h3 span{

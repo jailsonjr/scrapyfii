@@ -3,8 +3,7 @@ interface indicatorsProps {
     numberItem: Number,
     ticker: String,
     value: Number,
-    gain_today: String,
-    gain_7d: String
+    gain: String
   }
   
 
@@ -15,8 +14,7 @@ const Indicators = (props: indicatorsProps) => {
             <span>{ props.numberItem }</span>
             <span>{ props.ticker }</span>
             <span>r$ { props.value }</span>
-            <span>{ props.gain_today }</span>
-            <span>{ props.gain_7d }</span>
+            <span>{ props.gain }</span>
         </section>
       </section>
     )
