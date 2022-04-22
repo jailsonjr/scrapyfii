@@ -1,12 +1,11 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { PrismaClient, tickers_info } from '@prisma/client';
-
-const prisma = new PrismaClient();
+import { tickers_info } from '@prisma/client';
+import TickerInfoModel from '../../../models/TickerInfoModel';
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<tickers_info[]>
+  res: NextApiResponse<Object[]>
 ) {
-  const getListTickers = await prisma.tickers_info.findMany();
+  const getListTickers = await TickerInfoModel.getAllTickers();
   res.status(200).json(getListTickers);
 }

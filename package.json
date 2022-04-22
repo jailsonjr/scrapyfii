@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "migrate": "npx prisma db push",
+    "seed": "npx prisma db seed",
     "start": "next start",
     "lint": "next lint"
   },
@@ -14,6 +15,7 @@
   },
   "dependencies": {
     "@prisma/client": "3.12.0",
+    "axios": "^0.26.1",
     "csv": "^6.0.5",
     "next": "12.1.4",
     "prisma": "^3.12.0",

@@ -1,4 +1,3 @@
-
 generator client {
   provider = "prisma-client-js"
   previewFeatures = ["referentialIntegrity"]  
@@ -17,3 +16,15 @@ model tickers_info {
   ticker_name String? @unique
   ticker_admin String?
 }
+
+model tickers_history_price {
+  ticker String @id
+  ticker_date DateTime @db.Date
+  ticker_price_close Decimal
+  ticker_price_open Decimal
+  ticker_price_high Decimal
+  ticker_price_low Decimal
+  ticker_price_volume Int
+  updated_at DateTime @updatedAt
+}
+

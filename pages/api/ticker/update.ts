@@ -1,13 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
+import { getTickerPrices } from "../../../services/Alpha.service";
 
-type Data = {
-  name: string,
-  updateAt: Number
-}
-
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
-) {
-  res.status(200).json({ name: 'barriga fii', updateAt: Date.now() })
+export default async function handler(req: NextApiRequest,res: NextApiResponse<any>) {
+  let responseApi = await getTickerPrices("mxrf11");
+  res.status(200).json(responseApi);
 }
