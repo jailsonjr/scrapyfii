@@ -10,8 +10,8 @@ class TickerQueueModel {
         this.db = prismaInstance;
     }
 
-    getAllQueueTickers = () => {
-        return this.db.tickers_queue;
+    getAllQueueTickers = async () => {
+        return await this.db.tickers_queue.findMany();
     }
 
     populateQueueTickers = async () => {
