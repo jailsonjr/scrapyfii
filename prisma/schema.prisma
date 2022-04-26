@@ -18,13 +18,24 @@ model tickers_info {
 }
 
 model tickers_history_price {
-  ticker String @id
+  ticker_price_id String @id @default(uuid())
+  ticker String 
   ticker_date DateTime @db.Date
   ticker_price_close Decimal
   ticker_price_open Decimal
   ticker_price_high Decimal
   ticker_price_low Decimal
   ticker_price_volume Int
-  updated_at DateTime @updatedAt
+  updated_at DateTime @updatedAt @default(now())
+}
+
+model tickers_error {
+  ticker String @unique
+  ticker_date DateTime @db.Date
+  ticker_error String @db.Text
+}
+
+model tickers_queue {
+  ticker String @unique
 }
 

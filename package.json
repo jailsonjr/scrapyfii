@@ -8,7 +8,8 @@
     "migrate": "npx prisma db push",
     "seed": "npx prisma db seed",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "dbup": "pscale connect barrigafiis dev --port 3359"
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"

@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { tickers_info } from '@prisma/client';
-import TickerInfoModel from '../../../models/TickerInfoModel';
+import TickerInfoModel from '../../../models/TickerMetaModel';
 
 export default async function handler(
   req: NextApiRequest,

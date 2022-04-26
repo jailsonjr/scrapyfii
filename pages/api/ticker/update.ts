@@ -1,7 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { getTickerPrices } from "../../../services/Alpha.service";
+import TickerQueueModel from "../../../models/TickerQueueModel";
 
 export default async function handler(req: NextApiRequest,res: NextApiResponse<any>) {
-  let responseApi = await getTickerPrices("mxrf11");
-  res.status(200).json(responseApi);
+  let responseApi = await TickerQueueModel.populateQueueTickers();
+  console.log(responseApi);
+  res.status(200).json({});
 }

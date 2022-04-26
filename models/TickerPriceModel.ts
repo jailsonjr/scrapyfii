@@ -10,8 +10,25 @@ class TickerPriceModel {
         this.db = prismaInstance;
     }
 
-    getAllPriceTickers = async () => {
+    getAllPriceTickers = () => {
         return this.db.tickers_history_price.findMany();
+    }
+
+    checkPriceByDate = async (ticker: string, ticker_date: string) => {
+        let getData = await this.db.tickers_history_price
+        .findMany({
+            where: {
+                ticker: {
+                    equals: ticker
+                },
+                ticker_date: {
+                    equals: new Date(ticker_date).toISOString()
+                }
+            }
+        });
+
+        if(getData.length > 1) return true;
+        return false;
     }
 
 }

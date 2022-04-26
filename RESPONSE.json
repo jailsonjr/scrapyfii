@@ -1,0 +1,808 @@
+{
+	"metadata": {
+		"symbol": "MXRF11.SAO",
+		"lastUpdated": "2022-04-20"
+	},
+	"prices": [
+		{
+			"date": "2022-04-20",
+			"price_open": 9.75,
+			"price_close": 9.72,
+			"price_high": 9.88,
+			"price_low": 9.72,
+			"volume": 880206
+		},
+		{
+			"date": "2022-04-19",
+			"price_open": 9.68,
+			"price_close": 9.71,
+			"price_high": 9.8,
+			"price_low": 9.67,
+			"volume": 1686456
+		},
+		{
+			"date": "2022-04-18",
+			"price_open": 9.69,
+			"price_close": 9.68,
+			"price_high": 9.72,
+			"price_low": 9.6,
+			"volume": 828472
+		},
+		{
+			"date": "2022-04-14",
+			"price_open": 9.62,
+			"price_close": 9.69,
+			"price_high": 9.74,
+			"price_low": 9.62,
+			"volume": 1085896
+		},
+		{
+			"date": "2022-04-13",
+			"price_open": 9.51,
+			"price_close": 9.6,
+			"price_high": 9.62,
+			"price_low": 9.5,
+			"volume": 689245
+		},
+		{
+			"date": "2022-04-12",
+			"price_open": 9.49,
+			"price_close": 9.51,
+			"price_high": 9.53,
+			"price_low": 9.48,
+			"volume": 395831
+		},
+		{
+			"date": "2022-04-11",
+			"price_open": 9.46,
+			"price_close": 9.49,
+			"price_high": 9.5,
+			"price_low": 9.44,
+			"volume": 437366
+		},
+		{
+			"date": "2022-04-08",
+			"price_open": 9.41,
+			"price_close": 9.45,
+			"price_high": 9.47,
+			"price_low": 9.4,
+			"volume": 381782
+		},
+		{
+			"date": "2022-04-07",
+			"price_open": 9.42,
+			"price_close": 9.4,
+			"price_high": 9.47,
+			"price_low": 9.31,
+			"volume": 545023
+		},
+		{
+			"date": "2022-04-06",
+			"price_open": 9.3,
+			"price_close": 9.36,
+			"price_high": 9.54,
+			"price_low": 9.3,
+			"volume": 898648
+		},
+		{
+			"date": "2022-04-05",
+			"price_open": 9.45,
+			"price_close": 9.3,
+			"price_high": 9.56,
+			"price_low": 9.2,
+			"volume": 1251078
+		},
+		{
+			"date": "2022-04-04",
+			"price_open": 9.31,
+			"price_close": 9.45,
+			"price_high": 9.45,
+			"price_low": 9.31,
+			"volume": 710230
+		},
+		{
+			"date": "2022-04-01",
+			"price_open": 9.24,
+			"price_close": 9.3,
+			"price_high": 9.37,
+			"price_low": 9.21,
+			"volume": 1030061
+		},
+		{
+			"date": "2022-03-31",
+			"price_open": 9.21,
+			"price_close": 9.26,
+			"price_high": 9.38,
+			"price_low": 9.2,
+			"volume": 955146
+		},
+		{
+			"date": "2022-03-30",
+			"price_open": 9.15,
+			"price_close": 9.21,
+			"price_high": 9.22,
+			"price_low": 9.15,
+			"volume": 469524
+		},
+		{
+			"date": "2022-03-29",
+			"price_open": 9.13,
+			"price_close": 9.14,
+			"price_high": 9.17,
+			"price_low": 9.13,
+			"volume": 524297
+		},
+		{
+			"date": "2022-03-28",
+			"price_open": 9.15,
+			"price_close": 9.13,
+			"price_high": 9.16,
+			"price_low": 9.11,
+			"volume": 457368
+		},
+		{
+			"date": "2022-03-25",
+			"price_open": 9.08,
+			"price_close": 9.15,
+			"price_high": 9.15,
+			"price_low": 9.07,
+			"volume": 485247
+		},
+		{
+			"date": "2022-03-24",
+			"price_open": 9.08,
+			"price_close": 9.08,
+			"price_high": 9.14,
+			"price_low": 9.06,
+			"volume": 533563
+		},
+		{
+			"date": "2022-03-23",
+			"price_open": 9.08,
+			"price_close": 9.08,
+			"price_high": 9.12,
+			"price_low": 9.07,
+			"volume": 493121
+		},
+		{
+			"date": "2022-03-22",
+			"price_open": 9.05,
+			"price_close": 9.09,
+			"price_high": 9.09,
+			"price_low": 9.05,
+			"volume": 504675
+		},
+		{
+			"date": "2022-03-21",
+			"price_open": 9.08,
+			"price_close": 9.04,
+			"price_high": 9.08,
+			"price_low": 9.03,
+			"volume": 722283
+		},
+		{
+			"date": "2022-03-18",
+			"price_open": 9.08,
+			"price_close": 9.08,
+			"price_high": 9.09,
+			"price_low": 9.05,
+			"volume": 569640
+		},
+		{
+			"date": "2022-03-17",
+			"price_open": 9.08,
+			"price_close": 9.07,
+			"price_high": 9.1,
+			"price_low": 9.05,
+			"volume": 424598
+		},
+		{
+			"date": "2022-03-16",
+			"price_open": 9.08,
+			"price_close": 9.08,
+			"price_high": 9.1,
+			"price_low": 9.05,
+			"volume": 569403
+		},
+		{
+			"date": "2022-03-15",
+			"price_open": 9.08,
+			"price_close": 9.07,
+			"price_high": 9.09,
+			"price_low": 9.03,
+			"volume": 643490
+		},
+		{
+			"date": "2022-03-14",
+			"price_open": 9.08,
+			"price_close": 9.02,
+			"price_high": 9.12,
+			"price_low": 9.02,
+			"volume": 576248
+		},
+		{
+			"date": "2022-03-11",
+			"price_open": 9.15,
+			"price_close": 9.06,
+			"price_high": 9.17,
+			"price_low": 9.06,
+			"volume": 598701
+		},
+		{
+			"date": "2022-03-10",
+			"price_open": 9.12,
+			"price_close": 9.14,
+			"price_high": 9.14,
+			"price_low": 9.11,
+			"volume": 305844
+		},
+		{
+			"date": "2022-03-09",
+			"price_open": 9.1,
+			"price_close": 9.11,
+			"price_high": 9.12,
+			"price_low": 9.09,
+			"volume": 401030
+		},
+		{
+			"date": "2022-03-08",
+			"price_open": 9.08,
+			"price_close": 9.1,
+			"price_high": 9.13,
+			"price_low": 9.07,
+			"volume": 415659
+		},
+		{
+			"date": "2022-03-07",
+			"price_open": 9.12,
+			"price_close": 9.07,
+			"price_high": 9.14,
+			"price_low": 9.05,
+			"volume": 624164
+		},
+		{
+			"date": "2022-03-04",
+			"price_open": 9.12,
+			"price_close": 9.12,
+			"price_high": 9.19,
+			"price_low": 9.09,
+			"volume": 582663
+		},
+		{
+			"date": "2022-03-03",
+			"price_open": 9.14,
+			"price_close": 9.12,
+			"price_high": 9.2,
+			"price_low": 9.08,
+			"volume": 574764
+		},
+		{
+			"date": "2022-03-02",
+			"price_open": 9.13,
+			"price_close": 9.13,
+			"price_high": 9.22,
+			"price_low": 9.1,
+			"volume": 397421
+		},
+		{
+			"date": "2022-02-25",
+			"price_open": 9.1,
+			"price_close": 9.22,
+			"price_high": 9.3,
+			"price_low": 9.1,
+			"volume": 589780
+		},
+		{
+			"date": "2022-02-24",
+			"price_open": 9.14,
+			"price_close": 9.1,
+			"price_high": 9.14,
+			"price_low": 9,
+			"volume": 754051
+		},
+		{
+			"date": "2022-02-23",
+			"price_open": 9.2,
+			"price_close": 9.15,
+			"price_high": 9.3,
+			"price_low": 9.12,
+			"volume": 618060
+		},
+		{
+			"date": "2022-02-22",
+			"price_open": 9.32,
+			"price_close": 9.2,
+			"price_high": 9.37,
+			"price_low": 9.2,
+			"volume": 554578
+		},
+		{
+			"date": "2022-02-21",
+			"price_open": 9.39,
+			"price_close": 9.3,
+			"price_high": 9.46,
+			"price_low": 9.3,
+			"volume": 475581
+		},
+		{
+			"date": "2022-02-18",
+			"price_open": 9.37,
+			"price_close": 9.37,
+			"price_high": 9.5,
+			"price_low": 9.36,
+			"volume": 402704
+		},
+		{
+			"date": "2022-02-17",
+			"price_open": 9.43,
+			"price_close": 9.37,
+			"price_high": 9.44,
+			"price_low": 9.37,
+			"volume": 363236
+		},
+		{
+			"date": "2022-02-16",
+			"price_open": 9.41,
+			"price_close": 9.39,
+			"price_high": 9.5,
+			"price_low": 9.36,
+			"volume": 534808
+		},
+		{
+			"date": "2022-02-15",
+			"price_open": 9.35,
+			"price_close": 9.41,
+			"price_high": 9.42,
+			"price_low": 9.35,
+			"volume": 443584
+		},
+		{
+			"date": "2022-02-14",
+			"price_open": 9.32,
+			"price_close": 9.35,
+			"price_high": 9.39,
+			"price_low": 9.31,
+			"volume": 533677
+		},
+		{
+			"date": "2022-02-11",
+			"price_open": 9.26,
+			"price_close": 9.32,
+			"price_high": 9.35,
+			"price_low": 9.25,
+			"volume": 543070
+		},
+		{
+			"date": "2022-02-10",
+			"price_open": 9.33,
+			"price_close": 9.25,
+			"price_high": 9.35,
+			"price_low": 9.25,
+			"volume": 520724
+		},
+		{
+			"date": "2022-02-09",
+			"price_open": 9.37,
+			"price_close": 9.33,
+			"price_high": 9.39,
+			"price_low": 9.31,
+			"volume": 424073
+		},
+		{
+			"date": "2022-02-08",
+			"price_open": 9.37,
+			"price_close": 9.36,
+			"price_high": 9.41,
+			"price_low": 9.35,
+			"volume": 445718
+		},
+		{
+			"date": "2022-02-07",
+			"price_open": 9.4,
+			"price_close": 9.35,
+			"price_high": 9.45,
+			"price_low": 9.35,
+			"volume": 600628
+		},
+		{
+			"date": "2022-02-04",
+			"price_open": 9.43,
+			"price_close": 9.4,
+			"price_high": 9.5,
+			"price_low": 9.37,
+			"volume": 532488
+		},
+		{
+			"date": "2022-02-03",
+			"price_open": 9.44,
+			"price_close": 9.4,
+			"price_high": 9.53,
+			"price_low": 9.37,
+			"volume": 523957
+		},
+		{
+			"date": "2022-02-02",
+			"price_open": 9.55,
+			"price_close": 9.44,
+			"price_high": 9.7,
+			"price_low": 9.37,
+			"volume": 888451
+		},
+		{
+			"date": "2022-02-01",
+			"price_open": 9.44,
+			"price_close": 9.55,
+			"price_high": 9.68,
+			"price_low": 9.44,
+			"volume": 2321660
+		},
+		{
+			"date": "2022-01-31",
+			"price_open": 9.1,
+			"price_close": 9.33,
+			"price_high": 9.49,
+			"price_low": 8.81,
+			"volume": 2573126
+		},
+		{
+			"date": "2022-01-28",
+			"price_open": 9.52,
+			"price_close": 9.1,
+			"price_high": 9.65,
+			"price_low": 9.03,
+			"volume": 3490013
+		},
+		{
+			"date": "2022-01-27",
+			"price_open": 9.6,
+			"price_close": 9.52,
+			"price_high": 9.61,
+			"price_low": 9.4,
+			"volume": 2151918
+		},
+		{
+			"date": "2022-01-26",
+			"price_open": 9.75,
+			"price_close": 9.62,
+			"price_high": 9.86,
+			"price_low": 9.37,
+			"volume": 4440166
+		},
+		{
+			"date": "2022-01-25",
+			"price_open": 10.06,
+			"price_close": 10.01,
+			"price_high": 10.07,
+			"price_low": 10,
+			"volume": 655281
+		},
+		{
+			"date": "2022-01-24",
+			"price_open": 10.06,
+			"price_close": 10.06,
+			"price_high": 10.06,
+			"price_low": 10.03,
+			"volume": 702917
+		},
+		{
+			"date": "2022-01-21",
+			"price_open": 10.01,
+			"price_close": 10.06,
+			"price_high": 10.06,
+			"price_low": 10.01,
+			"volume": 791215
+		},
+		{
+			"date": "2022-01-20",
+			"price_open": 10.01,
+			"price_close": 10.01,
+			"price_high": 10.04,
+			"price_low": 9.98,
+			"volume": 653245
+		},
+		{
+			"date": "2022-01-19",
+			"price_open": 10,
+			"price_close": 10.01,
+			"price_high": 10.01,
+			"price_low": 9.99,
+			"volume": 551661
+		},
+		{
+			"date": "2022-01-18",
+			"price_open": 9.98,
+			"price_close": 10,
+			"price_high": 10,
+			"price_low": 9.98,
+			"volume": 538498
+		},
+		{
+			"date": "2022-01-17",
+			"price_open": 9.98,
+			"price_close": 10,
+			"price_high": 10,
+			"price_low": 9.97,
+			"volume": 750169
+		},
+		{
+			"date": "2022-01-14",
+			"price_open": 9.95,
+			"price_close": 9.98,
+			"price_high": 9.98,
+			"price_low": 9.94,
+			"volume": 762594
+		},
+		{
+			"date": "2022-01-13",
+			"price_open": 9.94,
+			"price_close": 9.96,
+			"price_high": 9.97,
+			"price_low": 9.94,
+			"volume": 386666
+		},
+		{
+			"date": "2022-01-12",
+			"price_open": 9.96,
+			"price_close": 9.94,
+			"price_high": 9.97,
+			"price_low": 9.94,
+			"volume": 468464
+		},
+		{
+			"date": "2022-01-11",
+			"price_open": 9.97,
+			"price_close": 9.96,
+			"price_high": 9.98,
+			"price_low": 9.96,
+			"volume": 383718
+		},
+		{
+			"date": "2022-01-10",
+			"price_open": 9.99,
+			"price_close": 9.97,
+			"price_high": 9.99,
+			"price_low": 9.94,
+			"volume": 600169
+		},
+		{
+			"date": "2022-01-07",
+			"price_open": 9.92,
+			"price_close": 9.99,
+			"price_high": 9.99,
+			"price_low": 9.9,
+			"volume": 408004
+		},
+		{
+			"date": "2022-01-06",
+			"price_open": 9.92,
+			"price_close": 9.92,
+			"price_high": 9.94,
+			"price_low": 9.92,
+			"volume": 369923
+		},
+		{
+			"date": "2022-01-05",
+			"price_open": 9.94,
+			"price_close": 9.92,
+			"price_high": 9.96,
+			"price_low": 9.92,
+			"volume": 503416
+		},
+		{
+			"date": "2022-01-04",
+			"price_open": 9.93,
+			"price_close": 9.94,
+			"price_high": 9.95,
+			"price_low": 9.92,
+			"volume": 481413
+		},
+		{
+			"date": "2022-01-03",
+			"price_open": 9.95,
+			"price_close": 9.93,
+			"price_high": 9.95,
+			"price_low": 9.91,
+			"volume": 596372
+		},
+		{
+			"date": "2021-12-30",
+			"price_open": 9.97,
+			"price_close": 10.01,
+			"price_high": 10.02,
+			"price_low": 9.97,
+			"volume": 553530
+		},
+		{
+			"date": "2021-12-29",
+			"price_open": 9.99,
+			"price_close": 9.96,
+			"price_high": 10,
+			"price_low": 9.96,
+			"volume": 452556
+		},
+		{
+			"date": "2021-12-28",
+			"price_open": 9.94,
+			"price_close": 9.96,
+			"price_high": 9.99,
+			"price_low": 9.93,
+			"volume": 457490
+		},
+		{
+			"date": "2021-12-27",
+			"price_open": 9.93,
+			"price_close": 9.94,
+			"price_high": 9.95,
+			"price_low": 9.89,
+			"volume": 477795
+		},
+		{
+			"date": "2021-12-23",
+			"price_open": 9.8,
+			"price_close": 9.93,
+			"price_high": 9.93,
+			"price_low": 9.8,
+			"volume": 465266
+		},
+		{
+			"date": "2021-12-22",
+			"price_open": 9.77,
+			"price_close": 9.8,
+			"price_high": 9.83,
+			"price_low": 9.77,
+			"volume": 424453
+		},
+		{
+			"date": "2021-12-21",
+			"price_open": 9.69,
+			"price_close": 9.77,
+			"price_high": 9.77,
+			"price_low": 9.68,
+			"volume": 547413
+		},
+		{
+			"date": "2021-12-20",
+			"price_open": 9.74,
+			"price_close": 9.68,
+			"price_high": 9.76,
+			"price_low": 9.68,
+			"volume": 788571
+		},
+		{
+			"date": "2021-12-17",
+			"price_open": 9.81,
+			"price_close": 9.73,
+			"price_high": 9.82,
+			"price_low": 9.72,
+			"volume": 810833
+		},
+		{
+			"date": "2021-12-16",
+			"price_open": 9.81,
+			"price_close": 9.81,
+			"price_high": 9.84,
+			"price_low": 9.8,
+			"volume": 509836
+		},
+		{
+			"date": "2021-12-15",
+			"price_open": 9.82,
+			"price_close": 9.81,
+			"price_high": 9.86,
+			"price_low": 9.79,
+			"volume": 615835
+		},
+		{
+			"date": "2021-12-14",
+			"price_open": 9.8,
+			"price_close": 9.82,
+			"price_high": 9.87,
+			"price_low": 9.79,
+			"volume": 621588
+		},
+		{
+			"date": "2021-12-13",
+			"price_open": 9.81,
+			"price_close": 9.8,
+			"price_high": 9.84,
+			"price_low": 9.8,
+			"volume": 514149
+		},
+		{
+			"date": "2021-12-10",
+			"price_open": 9.86,
+			"price_close": 9.81,
+			"price_high": 9.87,
+			"price_low": 9.81,
+			"volume": 639657
+		},
+		{
+			"date": "2021-12-09",
+			"price_open": 9.9,
+			"price_close": 9.86,
+			"price_high": 9.9,
+			"price_low": 9.86,
+			"volume": 576167
+		},
+		{
+			"date": "2021-12-08",
+			"price_open": 9.9,
+			"price_close": 9.89,
+			"price_high": 9.92,
+			"price_low": 9.87,
+			"volume": 613271
+		},
+		{
+			"date": "2021-12-07",
+			"price_open": 9.91,
+			"price_close": 9.89,
+			"price_high": 9.92,
+			"price_low": 9.89,
+			"volume": 625600
+		},
+		{
+			"date": "2021-12-06",
+			"price_open": 9.92,
+			"price_close": 9.91,
+			"price_high": 9.94,
+			"price_low": 9.9,
+			"volume": 886177
+		},
+		{
+			"date": "2021-12-03",
+			"price_open": 9.92,
+			"price_close": 9.92,
+			"price_high": 9.94,
+			"price_low": 9.92,
+			"volume": 422874
+		},
+		{
+			"date": "2021-12-02",
+			"price_open": 9.93,
+			"price_close": 9.92,
+			"price_high": 9.95,
+			"price_low": 9.91,
+			"volume": 485415
+		},
+		{
+			"date": "2021-12-01",
+			"price_open": 9.94,
+			"price_close": 9.93,
+			"price_high": 9.95,
+			"price_low": 9.9,
+			"volume": 646380
+		},
+		{
+			"date": "2021-11-30",
+			"price_open": 9.99,
+			"price_close": 9.98,
+			"price_high": 10.03,
+			"price_low": 9.98,
+			"volume": 836345
+		},
+		{
+			"date": "2021-11-29",
+			"price_open": 9.96,
+			"price_close": 9.99,
+			"price_high": 9.99,
+			"price_low": 9.96,
+			"volume": 529412
+		},
+		{
+			"date": "2021-11-26",
+			"price_open": 9.98,
+			"price_close": 9.96,
+			"price_high": 9.98,
+			"price_low": 9.94,
+			"volume": 515145
+		},
+		{
+			"date": "2021-11-25",
+			"price_open": 9.95,
+			"price_close": 9.98,
+			"price_high": 9.98,
+			"price_low": 9.95,
+			"volume": 511693
+		}
+	]
+}
