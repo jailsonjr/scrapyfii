@@ -22,9 +22,12 @@ class TickerController {
     updatePricesTickers = async () => {
         let getTicker = await this.queueModel.getCurrentTicker();
 
+        console.log("STEP: 1 get ticker", getTicker);
+
         if(getTicker?.ticker){
             let getPricesTicker = await this.priceService.getTickerPrices(getTicker.ticker);
-            
+            console.log("STEP: 2 get prices", getPricesTicker);
+
             if(getPricesTicker.metadata.error) {
 
                 let insertError = await this.errorModel.insertTickerError({
@@ -44,7 +47,9 @@ class TickerController {
             }            
 
             let insertPrices = await this.priceModel.insertPriceTicker(getPricesTicker);
+            console.log("STEP: 3 insert prices", insertPrices);
             let deleteInQueue = await this.queueModel.removeFromQueue(getTicker.ticker);
+            console.log("STEP: 4 delete prices", insertPrices);
             let insertedPrices = 0;
             let existsPrices = 0;
 
