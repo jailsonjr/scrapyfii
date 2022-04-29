@@ -2,7 +2,7 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-class TickerQueueModel {
+export class TickerQueueModel {
 
     private db: PrismaClient;
 
@@ -12,6 +12,13 @@ class TickerQueueModel {
 
     getAllQueueTickers = async () => {
         return await this.db.tickers_queue.findMany();
+    }
+
+    getCurrentTicker = async () => {
+        if(await this.getQueueCount() == 0){
+            await this.populateQueueTickers();  
+        }   
+        return await this.db.tickers_queue.findFirst();
     }
 
     populateQueueTickers = async () => {
@@ -48,6 +55,20 @@ class TickerQueueModel {
     getQueueCount = async () => {
         let getAllTickersInQueue = await this.db.tickers_queue.count();
         return getAllTickersInQueue;
+    }
+
+    removeFromQueue = async (ticker: string) => {
+        let removeTickerInQueue = await this.db.tickers_queue.delete({
+            where: {
+                ticker: ticker
+            }
+        });
+
+        if(removeTickerInQueue.ticker == ticker){
+            return true;
+        }
+
+        return false;
     }
 
     private getTickerErrorCount = async () => {
