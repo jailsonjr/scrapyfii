@@ -48,7 +48,7 @@ class TickerController {
             let insertedPrices = 0;
             let existsPrices = 0;
 
-            let countInserted = insertPrices.map(returned => {
+            insertPrices.map(returned => {
                 if(returned.includes('inserted')) {
                     insertedPrices++;
                 }

@@ -18,7 +18,7 @@ model tickers_info {
 }
 
 model tickers_history_price {
-  ticker_price_id String @id @default(uuid())
+  ticker_price_id String @id @db.VarChar(200)
   ticker String 
   ticker_date DateTime @db.Date
   ticker_price_close Decimal
