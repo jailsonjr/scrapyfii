@@ -41,8 +41,11 @@ export class TickerQueueModel {
             if(!await this.checkTickerInError(ticker.ticker)){
                 return await this.db.tickers_queue.create({
                     data: ticker
-                }).then(() => {
+                }).then((data) => {
+                    console.log(data);
                     inserted++;
+                }).catch(error => {
+                    console.log(error);
                 });
             }else {
                 withError++;
