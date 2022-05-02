@@ -42,10 +42,7 @@ export class TickerQueueModel {
                 return await this.db.tickers_queue.create({
                     data: ticker
                 }).then((data) => {
-                    console.log(data);
                     inserted++;
-                }).catch(error => {
-                    console.log(error);
                 });
             }else {
                 withError++;

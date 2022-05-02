@@ -10,8 +10,6 @@ export class AlphaService {
         let getUrlData = GET_URL + `&symbol=${ticker.toLocaleUpperCase()}.SAO`;
         let requestResponse = await axios.get(getUrlData);
 
-        console.log(requestResponse);
-
         if('Error Message' in requestResponse.data){
             return {
                 metadata: {
