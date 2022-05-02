@@ -1,15 +1,17 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import LinkPage from 'next/link';
 import styles from '../styles/Home.module.css';
-import { BsCalendar2Week as CalendarIcon  } from "react-icons/bs"
+import { BsCalendar2Week as CalendarIcon, BsFillNodeMinusFill  } from "react-icons/bs"
 import { BiBuildingHouse as FiisIcon  } from "react-icons/bi"
 
 import Logo from '../components/logo';
 import SearchInput from '../components/searchInput';
-import Link from '../components/link';
+import Anchor from '../components/anchor';
 import Indicators from '../components/indicators';
 
 const Home: NextPage = () => {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -22,8 +24,8 @@ const Home: NextPage = () => {
         <div className={styles.header}>
           <Logo />          
           <div className={styles.mainMenu}>
-            <Link  linkIcon={CalendarIcon} linkText="agenda dividendos" />
-            <Link  linkIcon={FiisIcon} linkText="todos FIIs" />
+            <Anchor href="#" linkIcon={CalendarIcon} linkText="agenda dividendos" />
+            <Anchor href="/allfiis" linkIcon={FiisIcon}  linkText="todos FIIs" />
             <SearchInput />
           </div>
         </div>
