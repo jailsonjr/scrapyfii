@@ -10,6 +10,7 @@ type TickersPrices = {
     price_low: number,
     volume: number
 }
+
 type TickerResponse = {
     metadata: {
         symbol: string,
@@ -28,6 +29,13 @@ export class TickerPriceModel {
 
     getAllPriceTickers = () => {
         return this.db.tickers_history_price.findMany();
+    }
+
+    getAllTickers = () => {
+        return this.db.tickers_history_price.findMany({
+            where: {},
+            distinct: ["ticker"]
+        });
     }
 
     insertPriceTicker = async (tickerResponse: TickerResponse) => {
@@ -76,6 +84,19 @@ export class TickerPriceModel {
             return true;
         }
         return false;
+    }
+
+    getFiiLastPrices = async (ticker: string) => {
+        return await this.db.tickers_history_price.findFirst({
+            where: {
+                ticker: ticker
+            },
+            skip: 0,
+            take: 1,
+            orderBy: [{
+                ticker_date: 'desc'
+            }]
+        })
     }
 
 }

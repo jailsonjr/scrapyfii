@@ -10,7 +10,7 @@
     "start": "next start",
     "lint": "next lint",
     "dbup-remote": "pscale connect srbarrigafiis dev --port 3359",
-    "dbup": "docler-compose up"
+    "dbup": "docker-compose up -d"
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
