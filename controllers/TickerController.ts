@@ -29,7 +29,7 @@ class TickerController {
 
                 let insertError = await this.errorModel.insertTickerError({
                     ticker: getTicker?.ticker,
-                    ticker_error: 'nok'
+                    ticker_error: getPricesTicker.metadata.error
                 });
 
                 let deleteInQueue = await this.queueModel.removeFromQueue(getTicker.ticker);

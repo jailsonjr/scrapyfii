@@ -15,7 +15,7 @@ export class AlphaService {
                 metadata: {
                     symbol: ticker,
                     lastUpdated: '',
-                    error: true
+                    error: requestResponse.data['Error Message']
                 },
                 prices: []
             };
