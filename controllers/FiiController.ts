@@ -1,4 +1,3 @@
-import { Decimal } from "@prisma/client/runtime";
 import TickersPriceModel, { TickerPriceModel } from "../models/TickerPriceModel";
 
 type TickersPrices = {

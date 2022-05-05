@@ -1,4 +1,6 @@
 import type { NextPage } from 'next';
+import { ReactNode, useEffect, useState } from 'react';
+import axios from 'axios';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { BsCalendar2Week as CalendarIcon  } from "react-icons/bs";
@@ -9,7 +11,39 @@ import Logo from '../components/logo';
 import SearchInput from '../components/searchInput';
 import Anchor from '../components/anchor';
 
-const Home: NextPage = () => {
+type TickersPrices = {
+  ticker_price_id: string
+  ticker: string
+  ticker_date: Date
+  ticker_price_close: number
+  ticker_price_open: number
+  ticker_price_high: number
+  ticker_price_low: number
+  ticker_price_volume: number
+  updated_at: Date,
+  gain: number
+}
+
+
+const AllFiis: NextPage = () => {
+
+  const [fiisPrice, setFiisPrice] = useState<TickersPrices[]>();
+  const [loadingPage, setLoadingPage] = useState<boolean>(true);
+
+  useEffect(() => {
+    async function getFiisPrices () {
+      const requesteResponse = await axios.get('http://localhost:3000/api/ticker/price');
+      const getData: TickersPrices[] = await requesteResponse.data;
+      return getData;
+    }
+    getFiisPrices().then((fiisData) => {
+      setFiisPrice(fiisData);
+      setLoadingPage(false);
+    }).catch(error => {
+      console.log(error);
+    })
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -20,29 +54,30 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <div className={styles.header}>
-          <Logo />          
+          <Logo />
           <div className={styles.mainMenu}>
-            <Anchor href="/" linkIcon={HomeIcon}  linkText="inicio" />
+            <Anchor href="/" linkIcon={HomeIcon} linkText="inicio" />
             <Anchor href="#" linkIcon={CalendarIcon} linkText="agenda dividendos" />
-            <Anchor href="/allfiis" linkIcon={FiisIcon}  linkText="todos FIIs" />
+            <Anchor href="/allfiis" linkIcon={FiisIcon} linkText="todos FIIs" />
             <SearchInput />
           </div>
         </div>
 
         <section className={styles.content}>
-        <section className={styles.contentFiis}>
-            <h3>Todos Fiis</h3>   
+
+          <section className={styles.contentFiis}>
+            <h3>Todos Fiis { loadingPage && <span>loading </span>} </h3>
             <div className={styles.indicatorsFii}>
+              {fiisPrice && fiisPrice.map((data, index) => (
+                <p key={index}>{data.ticker} - {data.gain}</p>
+              ))}
             </div>
         </section>
-        </section>
-        
-      </main>
+      </section>
 
-      <footer className={styles.footer}>
-      </footer>
+    </main>
     </div>
   )
 }
 
-export default Home
+export default AllFiis;
