@@ -12,16 +12,22 @@ import SearchInput from '../components/searchInput';
 import Anchor from '../components/anchor';
 
 type TickersPrices = {
-  ticker_price_id: string
-  ticker: string
-  ticker_date: Date
-  ticker_price_close: number
-  ticker_price_open: number
-  ticker_price_high: number
-  ticker_price_low: number
-  ticker_price_volume: number
-  updated_at: Date,
-  gain: number
+    ticker_price_id: string
+    ticker: string
+    ticker_date: Date
+    ticker_price_close: number
+    ticker_price_open: number
+    ticker_price_high: number
+    ticker_price_low: number
+    ticker_price_volume: number
+    updated_at: Date,
+    gain: number
+}
+
+type TickersPricesResponse = {
+  total: number,
+  prices: TickersPrices[]
+
 }
 
 const AllFiis: NextPage = () => {
@@ -32,11 +38,11 @@ const AllFiis: NextPage = () => {
   useEffect(() => {
     async function getFiisPrices () {
       const requesteResponse = await axios.get('https://srbarrigafiis.herokuapp.com/api/ticker/price');
-      const getData: TickersPrices[] = await requesteResponse.data;
+      const getData: TickersPricesResponse = await requesteResponse.data;
       return getData;
     }
     getFiisPrices().then((fiisData) => {
-      setFiisPrice(fiisData);
+      setFiisPrice(fiisData.prices);
       setLoadingPage(false);
     }).catch(error => {
       console.log(error);

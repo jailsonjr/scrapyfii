@@ -24,6 +24,7 @@ class FiiController {
     }
 
     listFiisWithLastPrices = async () => {
+        this.fiisPrices = [];
         let allTickers = await this.priceModel.getAllTickers();
 
         await Promise.all(allTickers.map(async ticker => {
@@ -44,7 +45,10 @@ class FiiController {
                 });
             }
         }));
-        return this.fiisPrices;        
+        return {
+           total: this.fiisPrices.length,
+           prices: this.fiisPrices
+        };        
     }
 
     calculateGainFii = (priceOpen: number, priceClose: number) => {
