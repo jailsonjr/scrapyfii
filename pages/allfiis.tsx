@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { ReactNode, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
@@ -24,7 +24,6 @@ type TickersPrices = {
   gain: number
 }
 
-
 const AllFiis: NextPage = () => {
 
   const [fiisPrice, setFiisPrice] = useState<TickersPrices[]>();
@@ -32,7 +31,7 @@ const AllFiis: NextPage = () => {
 
   useEffect(() => {
     async function getFiisPrices () {
-      const requesteResponse = await axios.get('http://localhost:3000/api/ticker/price');
+      const requesteResponse = await axios.get('https://srbarrigafiis.herokuapp.com/api/ticker/price');
       const getData: TickersPrices[] = await requesteResponse.data;
       return getData;
     }
@@ -79,5 +78,6 @@ const AllFiis: NextPage = () => {
     </div>
   )
 }
+
 
 export default AllFiis;
