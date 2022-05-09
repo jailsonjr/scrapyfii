@@ -37,11 +37,17 @@ const AllFiis: NextPage = () => {
 
   useEffect(() => {
     async function getFiisPrices () {
-      const requesteResponse = await axios.get('https://srbarrigafiis.herokuapp.com/api/ticker/price');
+      const requesteResponse = await axios.get(`/api/ticker/price`);
       const getData: TickersPricesResponse = await requesteResponse.data;
       return getData;
     }
     getFiisPrices().then((fiisData) => {
+      fiisData.prices.sort((a ,b) => {
+        if(a.gain > b.gain){
+          return -1;
+        }
+        return 1;
+      });
       setFiisPrice(fiisData.prices);
       setLoadingPage(false);
     }).catch(error => {
@@ -71,11 +77,37 @@ const AllFiis: NextPage = () => {
         <section className={styles.content}>
 
           <section className={styles.contentFiis}>
-            <h3>Todos Fiis { loadingPage && <span>loading </span>} </h3>
+            <h3>Todos Fiis  </h3>
             <div className={styles.indicatorsFii}>
-              {fiisPrice && fiisPrice.map((data, index) => (
-                <p key={index}>{data.ticker} - {data.gain}</p>
-              ))}
+            { loadingPage ? <span className={styles.loadingPage}>carregando </span> : 
+              <table className={styles.allFiisTable}>
+                <thead>
+                  <tr>
+                    <td><span>#</span></td>
+                    <td><span>ticker</span></td>
+                    <td><span>date price</span></td>
+                    <td><span>price</span></td>
+                    <td><span>gain</span></td>
+                    <td><span>volume</span></td>
+                    <td><span>update at</span></td>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                {fiisPrice && fiisPrice.map((data, index) => (
+                  <tr key={index}>
+                    <td>{index + 1}</td>
+                    <td>{data.ticker}</td>
+                    <td>{data.ticker_date}</td>
+                    <td>R$ {data.ticker_price_close}</td>
+                    <td>{data.gain}%</td>
+                    <td>{data.ticker_price_volume}</td>
+                    <td>{data.updated_at}</td>
+                  </tr>
+                ))}
+                </tbody>
+              </table> }
+
             </div>
         </section>
       </section>
@@ -84,6 +116,8 @@ const AllFiis: NextPage = () => {
     </div>
   )
 }
+
+
 
 
 export default AllFiis;

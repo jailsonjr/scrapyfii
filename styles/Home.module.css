@@ -240,3 +240,31 @@
   background-color: #1F3029;
 }
 
+.allFiisTable {
+  background-color: #30493F;
+  border-collapse: collapse;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.allFiisTable thead td{
+  color:#1F3029;
+  background-color: #F1BD7C;
+  font-size: 1.25rem;
+  letter-spacing: 0.25rem;
+}
+
+.allFiisTable td {
+  padding: 0.5rem 1rem;
+}
+
+.allFiisTable tbody tr:nth-child(even){
+  background-color: #365b4c;
+}
+
+.allFiisTable tbody{
+  font-family: FontInterMedium;
+  color: #eee;
+  font-size: 0.9rem;
+}
+
